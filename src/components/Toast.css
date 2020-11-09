@@ -1,0 +1,12 @@
+
+.toast-container {
+    width: 100%;
+    background:var(--firstColor);
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+.ToastText {
+    color: white;
+    font-weight: bold;
+}

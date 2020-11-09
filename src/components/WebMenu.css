@@ -1,0 +1,38 @@
+
+.ui.button.logoButton {
+    border: none;
+    outline:none;
+    background-color: white;
+  }
+  .ui.button.logoButton:hover {
+    border: none;
+    outline:none;
+    background-color: white;
+  }
+  
+  
+  .covidButton {
+    background-color: var(--firstColor) !important;
+    color: var(--fourthColor) !important;
+  }
+  
+  .covidButton:hover  {
+    background-color: var(--firstColor) !important;
+    color: var(--fourthColor) !important;
+  }
+
+  .EMButton {
+    background-color: var(--firstColor) !important;
+    color: var(--fourthColor) !important;
+  }
+
+
+  .EMButton:hover {
+    background-color: var(--firstColor) !important;
+    color: var(--fourthColor) !important;
+  }
+
+  .navFont {
+    color: var(--firstColor) !important;
+    font-weight: bold;
+  }
