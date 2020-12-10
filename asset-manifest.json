@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.989deafd.chunk.css",
+    "main.js": "/static/js/main.f0e6c7de.chunk.js",
+    "main.js.map": "/static/js/main.f0e6c7de.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f9f93f7a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f9f93f7a.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.14edd2ad.chunk.js": "/static/js/2.14edd2ad.chunk.js",
+    "static/js/2.14edd2ad.chunk.js.map": "/static/js/2.14edd2ad.chunk.js.map",
+    "static/js/3.8d0200ba.chunk.js": "/static/js/3.8d0200ba.chunk.js",
+    "static/js/3.8d0200ba.chunk.js.map": "/static/js/3.8d0200ba.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.989deafd.chunk.css.map": "/static/css/main.989deafd.chunk.css.map",
+    "static/js/2.14edd2ad.chunk.js.LICENSE.txt": "/static/js/2.14edd2ad.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/futur.71d20cae.ttf",
+    "static/media/logo.2d27ead7.svg": "/static/media/logo.2d27ead7.svg",
+    "static/media/token.d8524f16.png": "/static/media/token.d8524f16.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9f93f7a.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.14edd2ad.chunk.js",
+    "static/css/main.989deafd.chunk.css",
+    "static/js/main.f0e6c7de.chunk.js"
+  ]
+}
