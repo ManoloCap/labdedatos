@@ -16,10 +16,7 @@ import logo from './logo.svg';
 
 
 //Bootstrap
-import {Button,
-  Alert,
-  Breadcrumb,
-  Card,
+import {
   Container
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -50,14 +47,16 @@ function App() {
         <head>
         <meta name="viewport" content="width=device-width, target-densityDpi=device-dpi;" />
         </head>
-        <Toast popUpMessage={messageToast}
-                   color={toastColor}
-                   background={toastBackground}
-                   showToast={showToastStatus}
-              />
-        <WebMenu />
-        <Routes />
-        <Footer/>
+        <Container fluid>
+          <Toast popUpMessage={messageToast}
+                    color={toastColor}
+                    background={toastBackground}
+                    showToast={showToastStatus}
+                />
+          <WebMenu />
+          <Routes />
+          <Footer/>
+        </Container>
     </div>
   );
 }
