@@ -54,9 +54,9 @@ const weAreItems = [
                     {props.name}
                 </Col>
                 </Row>
-                <Row className="text-justify">
+                <Row className="text-left" className="px-3">
                 <Col>
-                    {props.message}
+                    <b>{props.message}</b>
                 </Col>
                 </Row>
             </Container>
@@ -87,37 +87,42 @@ const WeAre = () => {
     return(
         <React.Fragment>
             <header>
-                <Container fluid>
-                <Card border="light">
-                    <Card.Body className="containerMargins">
+                <Container fluid className="px-5">
+                <Card border="light border-0 px-5">
+                    <Card.Body className="px-5">
                         <Card.Title className="sectionHeader">LAS PRUEBAS SON EL <br/> CONTROL DE EPIDEMIAS 101</Card.Title>
+                        <Card.Text className="textHeader pt-4">
+                        <p className="secondColorText"><b>EL RETO PARA GUATEMALA </b></p>
+                        </Card.Text>
+                        <Card.Text className="labText">
+                        <p className="secondColorText">Algunos países informan la cantidad de personas evaluadas, mientras que otros informan la cantidad de pruebas realizadas. Estos dos números puedne ser diferentes porque la misma persona puede realizarse la prueba más de una vez. En Guatemala, simplemente no sabemos qué dato es el que aportan.
+                        </p>
+                        </Card.Text>
+                        <Card.Text className="labText">
+                        <p className="secondColorText">En la siguiente nota explicamos más sobre el problema de las pruebas para Guatemala:
+                        </p>
+                        </Card.Text>
+                        <Card.Text className="labText">
+                        <p className="secondColorText">HAZ CLICK AQUÍ -> <b>Fuentes oficiales discrepan sobre la cantidad de pruebas realizadas en Guatemala</b>
+                        </p>
+                        </Card.Text>
                         <Card.Text className="textHeader">
-                        EL RETO PARA GUATEMALA 
+                        <p className="secondColorText"><b>CUANTAS PRUEBAS DEBERÍAMOS ESTAR HACIENDO</b></p>
                         </Card.Text>
                         <Card.Text className="labText">
-                        Algunos países informan la cantidad de personas evaluadas, mientras que otros informan la cantidad de pruebas realizadas. Estos dos números puedne ser diferentes porque la misma persona puede realizarse la prueba más de una vez. En Guatemala, simplemente no sabemos qué dato es el que aportan.
+                        <p className="secondColorText">Una mayor cantidad de pruebas permite entender mejor la calidad, facilitando la toma de decisiones. Además, un mayor número de pruebas permite la identificación temprana de nuevos casos (incluyendo asintomáticos), lo que reduce la posibilidad de contagio, ralentiza la pandemia y, en etapas posteriores, evita los repuntes.
+                        </p>
                         </Card.Text>
                         <Card.Text className="labText">
-                        En la siguiente nota explicamos más sobre el problema de las pruebas para Guatemala:
-                        </Card.Text>
-                        <Card.Text className="labText">
-                        HAZ CLICK AQUÍ -> <b>Fuentes oficiales discrepan sobre la cantidad de pruebas realizadas en Guatemala</b>
-                        </Card.Text>
-                        <Card.Text className="textHeader">
-                        CUANTAS PRUEBAS DEBERÍAMOS ESTAR HACIENDO
-                        </Card.Text>
-                        <Card.Text className="labText">
-                        Una mayor cantidad de pruebas permite entender mejor la calidad, facilitando la toma de decisiones. Además, un mayor número de pruebas permite la identificación temprana de nuevos casos (incluyendo asintomáticos), lo que reduce la posibilidad de contagio, ralentiza la pandemia y, en etapas posteriores, evita los repuntes.
-                        </Card.Text>
-                        <Card.Text className="labText">
-                        De dicha cuenta, lo que se necesita, es aumentar nuestra capacidad de muestreo alcanzando una cantidad de pruebas por cada 100,000 habitantes por lo menos comparable a países de la region como Costa Rica, El salvador o Panama.
+                        <p className="secondColorText">De dicha cuenta, lo que se necesita, es aumentar nuestra capacidad de muestreo alcanzando una cantidad de pruebas por cada 100,000 habitantes por lo menos comparable a países de la region como Costa Rica, El salvador o Panama.
+                        </p>
                         </Card.Text>
                     </Card.Body>
                 </Card>
                 </Container>
             </header>
 
-            <main>
+            <main className="py-5">
                 <WeList/>
             </main>
         </React.Fragment>

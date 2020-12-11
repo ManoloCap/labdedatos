@@ -7,10 +7,24 @@ import {Container,
 } 
 from "react-bootstrap";
 const Toast = props => {
+    let toastContainer = {
+        width: "100%",
+        background: props.background,
+        textAlign: "center",
+        marginBottom: "0",
+        display: (props.showToast ? 'block' : 'none'),
+    }
+
+    let toastText = {
+        color: props.color,
+        fontWeight: "bold",
+    }
+
     return(
-        <div className={"toast-container"} style={{ display: (props.showToast ? 'block' : 'none') }}>
-            <p className={"ToastText"}>{props.popUpMessage}</p>
+        <div style={toastContainer}>
+            <p style={toastText}>{props.popUpMessage}</p>
         </div>
+    
 )};
 
 export default Toast;

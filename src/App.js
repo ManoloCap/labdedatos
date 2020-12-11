@@ -19,16 +19,22 @@ import logo from './logo.svg';
 import {Button,
   Alert,
   Breadcrumb,
-  Card
+  Card,
+  Container
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
+  let showToastStatus = !false;
+  let messageToast = "Barra POP-UP PARA CUALQUIER ANUNCIO" ;
+  let toastColor = "var(--fourthColor)"
+  let toastBackground = "var(--firstColor)"
+  //let // link
+  
   const history = useHistory();
   const [path, setPath] = useState("");
-  const showToast = false;
-  const messageToast = "Barra POP-UP PARA CUALQUIER ANUNCIO" ;
+
   const checkPath = () => {
     history.listen((location) => {
       setPath(location.pathname);
@@ -41,9 +47,16 @@ function App() {
 
   return (
     <div className="App">
-        <Toast popUpMessage={messageToast} showToast={showToast}/>
-        <WebMenu/>
-        <Routes/>
+        <head>
+        <meta name="viewport" content="width=device-width, target-densityDpi=device-dpi;" />
+        </head>
+        <Toast popUpMessage={messageToast}
+                   color={toastColor}
+                   background={toastBackground}
+                   showToast={showToastStatus}
+              />
+        <WebMenu />
+        <Routes />
         <Footer/>
     </div>
   );

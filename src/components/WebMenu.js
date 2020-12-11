@@ -25,21 +25,21 @@ const WebMenu = props => {
     const history = useHistory();
     const menuItems = [
         { key: 'home', name: 'Inicio', onClick: () => history.push('/')},
-        { key: 'we', name: 'Quiénes Somos', onClick: () => history.push('/QuienesSomos')},
-        { key: 'projects', name: 'Proyectos', onClick:() => history.push('/Proyectos')},
-        { key: 'news', name: 'Noticias', onClick: () => history.push('/Noticias')},
+        { key: 'we', name: 'Quiénes Somos', onClick: () => history.push('/QuienesSomos/')},
+        { key: 'serviciosYproyectos', name: 'Servicios y Proyectos', onClick:() => history.push('/ServiciosYProyectos/')},
+        { key: 'news', name: 'Publicaciones', onClick: () => history.push('/Publicaciones/')},
       ]
 
     const covidButtonInfo = { 
         key: 'dashboard',
         name: 'Tablero Covid-19',
-        onClick: () => history.push('/Tablero')
+        onClick: () => history.push('/TableroCovid/')
     }
 
     const mortalidadButtonInfo = { 
         key: 'mortalidad',
         name: 'Exceso de mortalidad',
-        onClick: () => history.push('/EM'),
+        onClick: () => history.push('/EM/'),
     }
 
     const logoClick = () => {
@@ -49,7 +49,7 @@ const WebMenu = props => {
     return(
         <React.Fragment>
             <Navbar expand="lg">
-            <Navbar.Brand><img onClick={()=>logoClick()} src={logo} alt="Logo"/></Navbar.Brand>
+            <Navbar.Brand><img className="clickable" onClick={()=>logoClick()} src={logo} alt="Logo"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">

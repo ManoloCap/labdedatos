@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  font-family:  Helvetica, sans-serif !important;
+}
+
+html, body, h1, footer {
+  font-family:  Helvetica, sans-serif !important; /*Specify your font name here*/
+  -ms-text-size-adjust: 100% !important;
+  -webkit-text-size-adjust: 100% !important;
+}
 
 :root {
   --firstColor:#024059;
@@ -7,12 +16,64 @@
   --fourthColor: white;
   
   --fontColor: black;
+  --crustaColor: #F3634E;
 }
 
+/* futura */ 
+@font-face {
+  font-family: 'futura';
+  src: local('futura'),
+       url('../src/fonts/futura/futur.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'futura';
+  src: local('futura'),
+       url('../src/fonts/futura/Futura\ Bold\ font.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'futura';
+  src: local('futura'),
+       url('../src/fonts/futura/Futura\ Light\ Italic\ font.ttf');
+  font-style: italic;
+  font-weight: normal;
+}
+/* bodoni */ 
+@font-face {
+  font-family: 'bodoni';
+  src: local('bodoni'),
+       url('../src/fonts/bodoni/bodoni.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'bodoni';
+  src: local('bodoni'),
+       url('../src/fonts/bodoni/Bodoni\ Bold.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'bodoni';
+  src: local('bodoni'),
+       url('../src/fonts/bodoni/Bodoni\ Italic.ttf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 footer {
   background-color: var(--firstColor);
   color: var(--fourthColor);
+  margin-top: auto;
 }
 
 Main {
@@ -52,4 +113,47 @@ header {
   color: var(--fontColor);
   font-size: 100% !important;
   text-align: justify;
+}
+
+/* Main View */ 
+
+.square1 {
+  background-color: var(--firstColor);
+  color: white;
+}
+
+.square2 {
+  background-color: var(--secondColor);
+  color: white;
+}
+
+.square3 {
+  background-color: var(--thirdColor);
+  color: white;
+}
+
+.square4 {
+  background-color: #F3634E;
+  color: white;
+}
+
+
+/* Post View */ 
+
+.postContainer {
+  background-color: red;
+  min-height: 100%;
+  height: 100%;
+}
+
+.img-Max-Post {
+  max-width: 300px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.secondColorText {
+color: var(--firstColor) !important ;
 }
